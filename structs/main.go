@@ -41,8 +41,13 @@ func main() {
 	jim.updateNameByValue("Jimmy")
 	jim.print()
 
-	jimPointer := &jim
-	jimPointer.updateNameByReference("Jimmy")
+	// #1
+	// jimPointer := &jim
+	// jimPointer.updateNameByReference("Jimmy")
+
+	// #2
+	jim.updateNameByReference("Jimmy")
+
 	jim.print()
 }
 
